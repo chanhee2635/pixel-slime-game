@@ -1,0 +1,51 @@
+# ============================================================
+# Unity
+# ============================================================
+client/PixelSlimeClient/Library/
+client/PixelSlimeClient/Temp/
+client/PixelSlimeClient/Logs/
+client/PixelSlimeClient/UserSettings/
+client/PixelSlimeClient/obj/
+client/PixelSlimeClient/.vs/
+client/PixelSlimeClient/*.csproj
+client/PixelSlimeClient/*.sln
+client/PixelSlimeClient/ExportedObj/
+client/PixelSlimeClient/builds/
+client/PixelSlimeClient/**/*.pidb
+client/PixelSlimeClient/**/*.suo
+client/PixelSlimeClient/**/*.user
+client/PixelSlimeClient/**/*.userprefs
+client/PixelSlimeClient/**/*.unityproj
+client/PixelSlimeClient/**/*.booproj
+client/PixelSlimeClient/Assets/AssetStoreTools*
+
+# Unity meta files (tracked via .meta files, not the assets themselves if binary)
+# Keep .meta files — Unity needs them
+
+# ============================================================
+# C++ Server
+# ============================================================
+server/build/
+server/.vs/
+server/**/*.obj
+server/**/*.exe
+server/**/*.pdb
+server/**/*.ilk
+server/**/*.lib
+server/**/*.dll
+server/**/*.exp
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# ============================================================
+# OS / IDE
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

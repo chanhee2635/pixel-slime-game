@@ -1,0 +1,22 @@
+{
+    "listeners": [
+        {
+            "address": "0.0.0.0",
+            "port": 8080,
+            "https": false
+        }
+    ],
+    "app": {
+        "number_of_threads": 4,
+        "enable_session": false,
+        "log_level": "DEBUG",
+        "log_path": "./logs",
+        "log_name": "pixel_slime"
+    },
+    "custom_config": {
+        "mongodb_uri": "mongodb://localhost:27017",
+        "mongodb_db": "pixel_slime",
+        "jwt_secret": "CHANGE_THIS_SECRET_KEY_IN_PRODUCTION",
+        "jwt_expires_hours": 72
+    }
+}
