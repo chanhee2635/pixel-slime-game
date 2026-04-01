@@ -4,7 +4,7 @@ namespace PixelSlime.Map
 {
     /// <summary>
     /// 쿼터뷰(아이소메트릭) 4방향 이동.
-    /// 스프라이트 깊이는 Y축 기반 SortingOrder로 처리.
+    /// 깊이 정렬은 IsometricSorter가 담당.
     /// </summary>
     [RequireComponent(typeof(Rigidbody2D))]
     public class IsometricMover : MonoBehaviour
@@ -32,7 +32,6 @@ namespace PixelSlime.Map
             float v = Input.GetAxisRaw("Vertical");
             _input = (IsoRight * h + IsoUp * v).normalized;
 
-            // 좌우 반전
             if (h != 0)
                 spriteRenderer.flipX = h < 0;
         }
@@ -40,9 +39,6 @@ namespace PixelSlime.Map
         void FixedUpdate()
         {
             _rb.linearVelocity = _input * moveSpeed;
-
-            // Y축 기반 Sorting — 아래 있을수록 앞에 그려짐
-            spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.y * 10);
         }
     }
 }
